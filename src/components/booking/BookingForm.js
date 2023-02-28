@@ -61,7 +61,7 @@ const BookingForm = (props) => {
           </div>
           <div className={styles.input_group}>
             <BsPerson />
-            <input type="number" name="guests" min={0} max={8} value={bookingInfo.guests} onChange={handleChange} />
+            <input type="number" name="guests" min={1} max={8} value={bookingInfo.guests} onChange={handleChange} />
           </div>
           <div className={styles.input_group}>
             <input type="button" onClick={() => setBookingInfo({ ...bookingInfo, makeABooking: true })} value="Make a Reservation" className={styles.btn} />
