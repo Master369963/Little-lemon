@@ -94,6 +94,11 @@
     &:active {
       transform: translateY(2px);
     }
+
+    &.disable {
+      background: rgb(170, 170, 170);
+      color: $color-secondary_03;
+    }
   }
 
   .booking_info {

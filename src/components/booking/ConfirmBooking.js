@@ -98,7 +98,7 @@ const ConfirmBooking = ({ bookingInfo, cancelHandler, getSubmit, dispatch }) => 
                 <div className={styles.invalid_msg}>{formik.errors.comment}</div>
               ) : null}
             </div>
-            <input type="submit" value="Confirm Booking" className={styles.confirm_btn} />
+            <input type="submit" value="Confirm Booking" className={(formik.isValid && formik.dirty) ? styles.confirm_btn : [styles.confirm_btn, styles.disable].join(' ')} />
             {/* <button type="submit">Submit</button> */}
           </div>
           <div className={styles.booking_info}>
