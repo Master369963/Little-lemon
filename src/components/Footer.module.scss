@@ -1,0 +1,84 @@
+@import '../styles/Mixin.scss';
+
+.wrapper {
+  background: #F3F3F4;
+}
+
+.footer_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  gap: 10px;
+  padding-top: 40px;
+  padding-bottom: 15px;
+
+
+  @include table_port {
+    padding-top: 30px;
+  }
+
+  @include small {
+    flex-wrap: wrap;
+    gap: 7px;
+  }
+}
+
+.footer_logo {
+  flex-basis: 15%;
+  position: relative;
+
+  img {
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include phone {}
+  }
+}
+
+.footer_group {
+  padding-top: 30px;
+
+  @include phone {
+    padding-top: 15px;
+  }
+
+  @include small {
+    padding-top: 0;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  li {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+
+    strong {
+      font-weight: 600;
+    }
+  }
+
+  .social_link {
+    display: inline-block;
+    margin-right: 5px;
+  }
+}
+
+.copyright {
+  padding: 10px 0;
+  font-size: 1.6rem;
+  font-family: "Markazi Text";
+  text-align: center;
+  letter-spacing: 1px;
+  color: $color-secondary_03;
+  background: $color-primary_01;
+}

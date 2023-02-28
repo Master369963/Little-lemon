@@ -1,0 +1,142 @@
+@import '../../styles/Mixin.scss';
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  width: 100%;
+  height: 100%;
+  background: rgba($color-primary_dark, 0.8);
+  @include flexCenter;
+}
+
+.content {
+  position: relative;
+  width: 60%;
+  background: $color-secondary_03;
+  padding: 30px;
+
+  @include phone {
+    width: 80%;
+  }
+}
+
+.close_tag {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 20px;
+  transition: all 1s ease;
+
+  &:hover path,
+  &:active path {
+    stroke: $color-secondary_01;
+    transition: all .1s ease;
+  }
+}
+
+.booking_content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  .input_area {
+    flex-basis: 50%;
+
+  }
+
+  .input_item {
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .invalid_msg {
+    position: absolute;
+    top: calc(100% + 3px);
+    left: 0;
+    right: 0;
+    font-size: 1.2rem;
+    color: $color-warning;
+  }
+
+  input {
+    @include input_block;
+    // margin-bottom: 15px;
+    border: 1px solid rgb(204, 204, 204);
+
+    // form invalid
+    &:hover {
+      border: 1px solid rgb(170, 170, 170);
+    }
+
+    &.invalid {
+      border-color: $color-warning;
+
+      &:focus-visible {
+        outline: none;
+        box-shadow: $warning-shadow;
+      }
+    }
+  }
+
+  .confirm_btn {
+    background: $color-primary_02;
+    border-color: transparent;
+    transition: all .2s ease;
+
+    &:hover {
+      background: $color-primary-01;
+      color: $color-secondary_03;
+      border-color: transparent;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+  .booking_info {
+    flex-basis: 50%;
+
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+
+    >div:not(:last-child) {
+      text-align: left;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    >div:last-child {
+      border-top: 1px solid $color-primary_dark;
+      margin-top: 10px;
+    }
+
+    span {
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+
+    svg {
+      font-size: 18px;
+    }
+
+    .booking_notes {
+      padding: 10px;
+      font-size: 1.2rem;
+      text-align: left;
+
+      li {
+        list-style: inside;
+        list-style-type: disc;
+      }
+    }
+  }
+}

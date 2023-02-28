@@ -1,0 +1,102 @@
+@import './Mixin.scss';
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&family=Love+Ya+Like+A+Sister&family=Markazi+Text:wght@400;500;600;700&display=swap');
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+  font-size: 62.5%;
+  font-family: 'Karla', 'Markazi Text', 'Love Ya Like A Sister', sans-serif;
+  color: $color-primary_dark;
+  scroll-behavior: smooth;
+
+  @include table_port {
+    font-size: 56.25%;
+  }
+
+  @include phone {
+    font-size: 50%;
+  }
+}
+
+a {
+  color: $color-primary_dark;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 70px;
+
+  @include table_port {
+    padding: 0 40px;
+  }
+
+  @include phone {
+    padding: 0 15px;
+  }
+}
+
+.primary-btn {
+  background: $color-primary_02;
+  padding: 16px 30px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: 1.5px;
+  border: none;
+  cursor: pointer;
+  transition: all .1s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    // box-shadow: 0 5px 15px rgba($color: $color-primary_dark, $alpha: 0.2);
+    box-shadow: 0px 1px 5px 0px rgba(87, 87, 87, 1);
+
+  }
+
+  &:active {
+    transform: translateY(-1px);
+  }
+
+  @include phone {
+    padding: 8px 15px;
+    font-size: 1.5rem;
+  }
+}
+
+.sub_title {
+  font-family: 'Markazi Text';
+  font-size: 4rem;
+  color: $color-primary_01;
+}
+
+// React datepicker
+div[class$=popper] {
+  width: 100%
+}
+
+.react-datepicker {
+  font-size: 1.1rem !important;
+  font-family: 'Karla' !important;
+
+  div[class$=current-month] {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+
+  // div[class$=trigangle]::after {
+  //   left: 80px;
+  // }
+}

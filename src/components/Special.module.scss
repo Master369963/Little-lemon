@@ -1,0 +1,37 @@
+@import '../styles/Mixin.scss';
+
+.wrapper {
+  padding: 120px 0 60px 0;
+
+  @include table_port {
+    padding: 60px 0 30px 0;
+  }
+
+  @include phone {
+    padding: 30px 0;
+  }
+}
+
+.title {
+  margin-bottom: 60px;
+  @include flexSBcenter;
+
+  @include table_port {
+    margin-bottom: 30px;
+  }
+}
+
+.cards {
+  @include flexSBcenter;
+
+  @include phone {
+
+    padding: 0 25px;
+  }
+
+  @include small {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+}

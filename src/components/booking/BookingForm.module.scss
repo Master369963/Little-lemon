@@ -1,0 +1,92 @@
+@import '../../styles/Mixin.scss';
+
+.wrapper {
+  min-height: calc(100vh - 350px);
+  padding: 60px 0;
+
+  @include phone {
+    padding: 30px 0;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    flex-direction: row-reverse;
+
+    @include small {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .img_container {
+    max-width: 60%;
+    flex-basis: 60%;
+
+    @include small {
+      max-width: none;
+    }
+  }
+
+  .booking_content {
+    max-width: 40%;
+
+    @include phone {
+      max-width: 70%;
+    }
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  input,
+  select {
+    @include input_block;
+  }
+
+  select {
+    appearance: none;
+  }
+
+  .input_group {
+    position: relative;
+    margin-bottom: 10px;
+
+    svg {
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+    }
+  }
+
+  p {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    text-align: left;
+    line-height: 16px;
+
+    span {
+      text-decoration: underline;
+    }
+  }
+
+  .btn {
+    position: relative;
+    padding: 10px;
+
+    &:hover {
+      background: $color-primary_02;
+      border-color: transparent;
+      transition: all .2s ease;
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+}
