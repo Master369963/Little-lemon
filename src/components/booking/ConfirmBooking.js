@@ -44,7 +44,7 @@ const ConfirmBooking = ({ bookingInfo, cancelHandler, getSubmit, dispatch }) => 
       <div className={styles.content}>
         <h2 className="sub_title">Enter Your Information</h2>
         <div className={styles.close_tag} onClick={cancelHandler}>
-          <GrClose />
+          <GrClose aria-label="Close" />
         </div>
         <form className={styles.booking_content} onSubmit={formik.handleSubmit}>
           <div className={styles.input_area}>
@@ -98,8 +98,7 @@ const ConfirmBooking = ({ bookingInfo, cancelHandler, getSubmit, dispatch }) => 
                 <div className={styles.invalid_msg}>{formik.errors.comment}</div>
               ) : null}
             </div>
-            <input type="submit" value="Confirm Booking" className={(formik.isValid && formik.dirty) ? styles.confirm_btn : [styles.confirm_btn, styles.disable].join(' ')} />
-            {/* <button type="submit">Submit</button> */}
+            <input aria-label="On Click" type="submit" value="Confirm Booking" className={(formik.isValid && formik.dirty) ? styles.confirm_btn : [styles.confirm_btn, styles.disable].join(' ')} />
           </div>
           <div className={styles.booking_info}>
             <h3>Your reservation details</h3>
