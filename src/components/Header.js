@@ -24,15 +24,15 @@ function Header() {
           </li>
           <li>
             {/* <a href="/#about" onClick={handleClick('about')}>About</a> */}
-            <LinkRoll to="about" activeClass="active" spy={true} smooth={true} offset={50} duration={500} onClick={handleClick('about')}>About</LinkRoll>
+            <LinkRoll to="about" activeClass="active" spy={true} smooth={true} offset={-100} duration={500} onClick={handleClick('about')}>About</LinkRoll>
           </li>
           <li>
             {/* <a href="/#reviews" onClick={handleClick('reviews')}>Reviews</a> */}
-            <LinkRoll to="reviews" activeClass="active" spy={true} smooth={true} offset={50} duration={500} onClick={handleClick('reviews')}>Reviews</LinkRoll>
+            <LinkRoll to="reviews" activeClass="active" spy={true} smooth={true} offset={-100} duration={500} onClick={handleClick('reviews')}>Reviews</LinkRoll>
 
           </li>
           <li>
-            <LinkRoll to="special" activeClass="active" spy={true} smooth={true} offset={50} duration={500} onClick={handleClick('special')}>Order Online</LinkRoll>
+            <LinkRoll to="special" activeClass="active" spy={true} smooth={true} offset={-50} duration={500} onClick={handleClick('special')}>Order Online</LinkRoll>
             {/* <a href="/#special" onClick={handleClick('special')}>Order Online</a> */}
           </li>
           <li>
