@@ -13,7 +13,7 @@ const BookingSuccess = ({ closeHandler, booking }) => {
 
           <p>{booking.bookingInfo.firstName} {booking.bookingInfo.surName}</p>
           <p>{DateHandler(booking.bookingInfo.res_date)}</p>
-          <p>for {booking.bookingInfo.guests} guests at {booking.bookingInfo.res_time}</p>
+          <p>For {booking.bookingInfo.guests} {booking.bookingInfo.guests > 1 ? 'guests' : 'guest'} at {booking.bookingInfo.res_time}</p>
         </div>
         <button aria-label="On Click" className="primary-btn" onClick={closeHandler}>Make a reservation</button>
       </div>

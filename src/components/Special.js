@@ -1,7 +1,10 @@
 import styles from './Special.module.scss'
 import SpecialCard from './utilities/SpecialCard'
+import specialMenu from './data/specialMenu'
 
 const Special = () => {
+
+  console.log(specialMenu)
   return (
     <section id="special" className={styles.wrapper}>
       <div className={`container`}>

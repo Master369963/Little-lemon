@@ -2,8 +2,8 @@ import styles from './Header.module.scss'
 import Logo from '../images/Logo.png'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
-import { Link as LinkRoll } from 'react-scroll'
+import { Link, useNavigate, useLocation } from 'react-router-dom'
+// import { Link as LinkRoll } from 'react-scroll'
 
 function Header() {
   const [isNavOpened, setIsNavOpened] = useState(false)
@@ -12,6 +12,7 @@ function Header() {
     navigate(`/#${anchor}`)
     setIsNavOpened(false)
   }
+
   return (
     <header className={`container ${styles.wrapper}`}>
       <div className={styles.logo_container}>
@@ -23,17 +24,17 @@ function Header() {
             <Link to="/" onClick={() => setIsNavOpened(false)}>Home</Link>
           </li>
           <li>
-            {/* <a href="/#about" onClick={handleClick('about')}>About</a> */}
-            <LinkRoll to="about" activeClass="active" spy={true} smooth={true} offset={-100} duration={500} onClick={handleClick('about')}>About</LinkRoll>
+            <a href="/#about" onClick={handleClick('about')}>About</a>
+            {/* <LinkRoll to="about" activeClass="active" spy={true} smooth={true} offset={-100} duration={500} onClick={handleClick('about')}>About</LinkRoll> */}
           </li>
           <li>
-            {/* <a href="/#reviews" onClick={handleClick('reviews')}>Reviews</a> */}
-            <LinkRoll to="reviews" activeClass="active" spy={true} smooth={true} offset={-100} duration={500} onClick={handleClick('reviews')}>Reviews</LinkRoll>
+            <a href="/#reviews" onClick={handleClick('reviews')}>Reviews</a>
+            {/* <LinkRoll to="reviews" activeClass="active" spy={true} smooth={true} offset={-100} duration={500} onClick={handleClick('reviews')}>Reviews</LinkRoll> */}
 
           </li>
           <li>
-            <LinkRoll to="special" activeClass="active" spy={true} smooth={true} offset={-50} duration={500} onClick={handleClick('special')}>Order Online</LinkRoll>
-            {/* <a href="/#special" onClick={handleClick('special')}>Order Online</a> */}
+            {/* <LinkRoll to="special" activeClass="active" spy={true} smooth={true} offset={-50} duration={500} onClick={handleClick('special')}>Order Online</LinkRoll> */}
+            <a href="/#special" onClick={handleClick('special')}>Order Online</a>
           </li>
           <li>
             <Link to="/reservation" onClick={() => setIsNavOpened(false)}>Reservations</Link>

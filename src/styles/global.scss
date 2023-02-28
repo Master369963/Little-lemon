@@ -14,7 +14,7 @@ html {
   font-size: 62.5%;
   font-family: 'Karla', 'Markazi Text', 'Love Ya Like A Sister', sans-serif;
   color: $color-primary_dark;
-  // scroll-behavior: smooth;
+  scroll-behavior: smooth;
 
   @include table_port {
     font-size: 56.25%;
