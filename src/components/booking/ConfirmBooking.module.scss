@@ -20,6 +20,11 @@
   @include phone {
     width: 80%;
   }
+
+  @include small {
+    width: 100%;
+    padding: 10px;
+  }
 }
 
 .close_tag {
@@ -41,9 +46,12 @@
   justify-content: space-between;
   gap: 20px;
 
+  @include small {
+    gap: 10px;
+  }
+
   .input_area {
     flex-basis: 50%;
-
   }
 
   .input_item {
@@ -60,9 +68,9 @@
     color: $color-warning;
   }
 
-  input {
+  input,
+  textarea {
     @include input_block;
-    // margin-bottom: 15px;
     border: 1px solid rgb(204, 204, 204);
 
     // form invalid
@@ -139,6 +147,7 @@
       text-align: left;
 
       li {
+        line-height: 15px;
         list-style: inside;
         list-style-type: disc;
       }

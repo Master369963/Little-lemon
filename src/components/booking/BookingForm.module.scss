@@ -33,7 +33,7 @@
   .booking_content {
     max-width: 40%;
 
-    @include phone {
+    @include small {
       max-width: 70%;
     }
   }

@@ -29,7 +29,7 @@ const ConfirmBooking = ({ bookingInfo, cancelHandler, getSubmit, dispatch }) => 
       email: Yup.string().email('Invalid email address')
         .required('This area is required'),
       comment: Yup.string()
-        .max(30)
+        .max(40)
     }),
     onSubmit: (value => {
       getSubmit(value)
@@ -89,11 +89,10 @@ const ConfirmBooking = ({ bookingInfo, cancelHandler, getSubmit, dispatch }) => 
               ) : null}
             </div>
             <div className={styles.input_item}>
-              <input type="text"
-                placeholder="Add a special request(Optional)"
+              <textarea cols="3" placeholder="Special request(Optional)"
                 name="comment"
                 className={formik.touched.comment && formik.errors.comment ? styles.invalid : null}
-                {...formik.getFieldProps('comment')} />
+                {...formik.getFieldProps('comment')}></textarea>
               {formik.touched.comment && formik.errors.comment ? (
                 <div className={styles.invalid_msg}>{formik.errors.comment}</div>
               ) : null}
