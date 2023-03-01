@@ -3,8 +3,6 @@ import { GiScooter } from 'react-icons/gi'
 import photo from '../../images/greekSalad.png'
 
 const SpecialCard = ({ specialItem }) => {
-
-  console.log(specialItem)
   return (
     <div className={styles.card}>
       <div className={styles.card_photo}>
