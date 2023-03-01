@@ -1,0 +1,54 @@
+@import '../../styles/Mixin.scss';
+
+.wrapper {
+  background: #F3F3F4;
+}
+
+.footer_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  text-align: left;
+  padding-top: 40px;
+  padding-bottom: 15px;
+
+  @include small {
+    gap: 20px;
+  }
+}
+
+.footer_logo {
+  flex-basis: 20%;
+  max-width: 100px;
+  // flex: 1;
+
+  @include small {
+    // flex: 1;
+  }
+}
+
+.footer_group {
+  // flex: 1;
+
+  li {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+}
+
+.social_links {
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.copyright {
+  padding: 10px 0;
+  font-size: 1.6rem;
+  font-family: "Markazi Text";
+  text-align: center;
+  letter-spacing: 1px;
+  color: $color-secondary_03;
+  background: $color-primary_01;
+}
