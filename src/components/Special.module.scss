@@ -17,15 +17,16 @@
   @include flexSBcenter;
 
   @include table_port {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 
 .cards {
-  @include flexSBcenter;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
 
   @include phone {
-
     padding: 0 25px;
   }
 
