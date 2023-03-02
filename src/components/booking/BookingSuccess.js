@@ -2,11 +2,9 @@ import styles from './BookingSuccess.module.scss'
 import DateHandler from '../data/DateHandler'
 
 const BookingSuccess = ({ closeHandler, booking }) => {
-  console.log('book', booking.bookingInfo)
   return (
     <div className={styles.wrapper}>
       <div className="container">
-        {/* <h2 className="sub_title">Booking Completed!</h2> */}
         <h2 className="sub_title">Hi, <span>{booking.bookingInfo.firstName}</span></h2>
         <h2 className="sub_title">Thank you for making a reservation at Little Lemon!</h2>
         <div className={styles.booking_info}>

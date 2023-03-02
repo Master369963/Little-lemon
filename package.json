@@ -1,8 +1,8 @@
 {
-  "name": "little-lemon-restaurant",
+  "name": "Little-lemon",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://master369963.github.io/Little-lemon",
+  "homepage": "https://master369963.github.io/Little-lemon/",
   "dependencies": {
     "@chakra-ui/react": "^2.4.9",
     "@emotion/react": "^11.10.5",
@@ -18,6 +18,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.8.1",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.9",
     "sass": "^1.58.0",

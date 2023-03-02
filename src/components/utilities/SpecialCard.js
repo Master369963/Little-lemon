@@ -1,6 +1,4 @@
 import styles from './SpecialCard.module.scss'
-import { GiScooter } from 'react-icons/gi'
-import photo from '../../images/greekSalad.png'
 
 const SpecialCard = ({ specialItem }) => {
   return (
@@ -14,10 +12,6 @@ const SpecialCard = ({ specialItem }) => {
           <span>£{specialItem.price}</span>
         </div>
         <p>{specialItem.description}</p>
-        {/* <div className={styles.card_footer}>
-          <p>Order a delivery</p>
-          <GiScooter size={20} />
-        </div> */}
       </div>
 
     </div>
