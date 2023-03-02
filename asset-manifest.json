@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Little-lemon/static/css/main.877be596.css",
-    "main.js": "/Little-lemon/static/js/main.0090f433.js",
+    "main.js": "/Little-lemon/static/js/main.36c09577.js",
     "static/js/787.9322e090.chunk.js": "/Little-lemon/static/js/787.9322e090.chunk.js",
     "static/media/booking.jpg": "/Little-lemon/static/media/booking.afc196b9852b5513a10e.jpg",
     "static/media/about.jpg": "/Little-lemon/static/media/about.f23a9ab2aa4c7438cb17.jpg",
@@ -12,11 +12,11 @@
     "static/media/pagination.less": "/Little-lemon/static/media/pagination.cf9d7af2fb0c274c4110.less",
     "index.html": "/Little-lemon/index.html",
     "main.877be596.css.map": "/Little-lemon/static/css/main.877be596.css.map",
-    "main.0090f433.js.map": "/Little-lemon/static/js/main.0090f433.js.map",
+    "main.36c09577.js.map": "/Little-lemon/static/js/main.36c09577.js.map",
     "787.9322e090.chunk.js.map": "/Little-lemon/static/js/787.9322e090.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.877be596.css",
-    "static/js/main.0090f433.js"
+    "static/js/main.36c09577.js"
   ]
 }
