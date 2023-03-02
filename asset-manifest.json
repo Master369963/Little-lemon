@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Little-lemon/static/css/main.877be596.css",
+    "main.js": "/Little-lemon/static/js/main.0090f433.js",
+    "static/js/787.9322e090.chunk.js": "/Little-lemon/static/js/787.9322e090.chunk.js",
+    "static/media/booking.jpg": "/Little-lemon/static/media/booking.afc196b9852b5513a10e.jpg",
+    "static/media/about.jpg": "/Little-lemon/static/media/about.f23a9ab2aa4c7438cb17.jpg",
+    "static/media/hero.png": "/Little-lemon/static/media/hero.8b29b11ff549f90735f7.png",
+    "static/media/Logo-vertical.png": "/Little-lemon/static/media/Logo-vertical.3a3fb5166f0fd9bed8a8.png",
+    "static/media/greekSalad.png": "/Little-lemon/static/media/greekSalad.df725664e6ef200121eb.png",
+    "static/media/Logo.png": "/Little-lemon/static/media/Logo.ac7c17006ed69939b034.png",
+    "static/media/pagination.less": "/Little-lemon/static/media/pagination.cf9d7af2fb0c274c4110.less",
+    "index.html": "/Little-lemon/index.html",
+    "main.877be596.css.map": "/Little-lemon/static/css/main.877be596.css.map",
+    "main.0090f433.js.map": "/Little-lemon/static/js/main.0090f433.js.map",
+    "787.9322e090.chunk.js.map": "/Little-lemon/static/js/787.9322e090.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.877be596.css",
+    "static/js/main.0090f433.js"
+  ]
+}
