@@ -12,7 +12,7 @@ const About = () => {
             <h3>Hours</h3>
             <ul>
               <li><strong>Mon - Fri</strong> 12pm - 3pm | 5pm - 10pm</li>
-              <li><strong>Sat</strong> 11:30am - 3pm | 5:30pm - 11pm</li>
+              <li><strong>Sat</strong> 11:30am - 3pm | 5pm - 11pm</li>
               <li><strong>Sun</strong>Closed</li>
             </ul>
           </div>
