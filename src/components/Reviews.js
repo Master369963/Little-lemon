@@ -8,7 +8,6 @@ import 'swiper/less/pagination';
 import reviews from './data/reviewData'
 
 const Reviews = () => {
-
   return (
     <section className={styles.wrapper} id="reviews">
       <div className={styles.background}></div>
@@ -16,10 +15,8 @@ const Reviews = () => {
         <h2 className='sub_title'>Our reviews</h2>
         <div className={styles.slider_container}>
           <Swiper
-            // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={10}
-            // slidesPerView={5}
             navigation
             breakpoints={{
               340: {
@@ -37,8 +34,8 @@ const Reviews = () => {
             }}
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log('slide change')}
+          // onSwiper={(swiper) => console.log(swiper)}
+          // onSlideChange={() => console.log('slide change')}
           >
             {reviews.map((review) => (
               <SwiperSlide key={review.id}>

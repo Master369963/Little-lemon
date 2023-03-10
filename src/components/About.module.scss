@@ -5,32 +5,32 @@
   padding: 30px 0;
 
   &::before {
-    content: "";
     position: absolute;
+    z-index: -1;
     width: 100%;
     height: calc(100% - 60px);
     background-image: url(../images/about.jpg);
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
+    content: "";
     filter: saturate(0.4);
-    z-index: -1;
   }
 }
 
 .content {
-  min-height: 400px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   padding: 15px;
+  min-height: 400px;
 }
 
 .subsection {
+  margin: 30px auto;
+  padding: 30px;
   max-width: 600px;
   background: rgba($color-secondary_03, 0.7);
-  padding: 30px;
-  margin: 30px auto;
   text-align: center;
 
   @include phone {
@@ -38,27 +38,27 @@
   }
 
   h2 {
-    font-family: 'Love Ya Like A Sister';
-    font-size: 5rem;
     letter-spacing: 3px;
+    font-size: 5rem;
+    font-family: 'Love Ya Like A Sister';
   }
 
   span {
     display: block;
-    font-family: 'Markazi Text';
-    font-size: 3.1rem;
-    color: $color-primary_dark;
     margin-bottom: 20px;
+    color: $color-primary_dark;
+    font-size: 3.1rem;
+    font-family: 'Markazi Text';
   }
 
   p {
+    margin: 0 auto;
     width: 70%;
+    color: $color-primary_dark;
+    letter-spacing: 1px;
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 21px;
-    letter-spacing: 1px;
-    color: $color-primary_dark;
-    margin: 0 auto;
 
     @include phone {
       width: 100%;
@@ -66,8 +66,8 @@
   }
 
   .opentime {
-    width: 70%;
     margin: 20px auto;
+    width: 70%;
 
     h3 {
       font-size: 2rem;

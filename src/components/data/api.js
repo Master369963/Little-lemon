@@ -1,10 +1,10 @@
 export const seededRandom = function (seed) {
-  var m = 2 ** 35 - 31;
-  var a = 185852;
-  var s = seed % m;
+  var m = 2 ** 35 - 31
+  var a = 185852
+  var s = seed % m
   return function () {
-    return (s = s * a % m) / m;
-  };
+    return (s = s * a % m) / m
+  }
 }
 
 export const fetchAPI = function (date) {
@@ -20,8 +20,8 @@ export const fetchAPI = function (date) {
     }
   }
   return result;
-};
+}
 
 export const submitAPI = function (formData) {
   return true;
-};
+}

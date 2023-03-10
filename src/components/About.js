@@ -16,9 +16,7 @@ const About = () => {
               <li><strong>Sun</strong>Closed</li>
             </ul>
           </div>
-
         </div>
-
       </div>
     </section>
   )

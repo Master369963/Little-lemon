@@ -6,7 +6,6 @@ const DateHandler = (date) => {
   const bookingMonth = month[date.getMonth()]
 
   return (`${bookingDay}, ${bookingDate} ${bookingMonth}`)
-
 }
 
 export default DateHandler

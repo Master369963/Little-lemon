@@ -25,7 +25,6 @@ const BookingForm = (props) => {
   const handleDateChange = (date) => {
     setBookingInfo({ ...bookingInfo, res_date: date })
     props.dispatch({ type: 'updateDate', selectedDate: date })
-
   }
 
   const cancelBooking = () => {
@@ -42,7 +41,6 @@ const BookingForm = (props) => {
         <div className={styles.img_container}>
           <img src={photo} alt="" />
         </div>
-
         <div className={styles.booking_content}>
           <h2 className="sub_title">Make a booking</h2>
           <div className={styles.input_group}>
@@ -52,8 +50,6 @@ const BookingForm = (props) => {
           <div className={styles.input_group}>
             <BsClock />
             <select name="res_time" value={bookingInfo.res_time} onChange={handleChange}>
-
-
               {matchData.time.map((data) => (
                 <option value={data} key={data}>{data}</option>
               ))}
@@ -71,7 +67,6 @@ const BookingForm = (props) => {
           {bookingInfo.makeABooking && <ConfirmBooking dispatch={props.dispatch} bookingInfo={bookingInfo} cancelHandler={cancelBooking} getSubmit={handleSubmit} />}
         </ div>
       </div>
-
     </div>
   )
 }

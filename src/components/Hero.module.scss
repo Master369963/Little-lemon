@@ -1,9 +1,9 @@
 @import '../styles/Mixin.scss';
 
 .wrapper {
-  max-height: 400px;
   padding-top: 20px;
   padding-bottom: 20px;
+  max-height: 400px;
   background: $color-primary_01;
   @include flexSBcenter;
 
@@ -12,64 +12,59 @@
   }
 
   @include small {
-    max-height: none;
     flex-direction: column;
+    max-height: none;
   }
-
 }
 
 .subsection {
   flex-basis: 60%;
 
-  h1 {
-    font-family: 'Love Ya Like A Sister';
-    font-size: 6.4rem;
-    color: $color-primary_02;
-    letter-spacing: 3px;
-  }
-
-  span {
-    display: block;
-    font-family: 'Markazi Text';
-    font-size: 4rem;
-    color: $color-secondary_03;
-  }
-
-  p {
-    width: 70%;
-    font-weight: 500;
-    font-size: 1.8rem;
-    line-height: 21px;
-    color: $color-secondary_03;
-    margin: 30px 0 50px 0;
-  }
-
   @include phone {
-    width: 100%;
     margin-bottom: 2rem;
+    width: 100%;
 
     h1 {
       font-size: 6rem;
     }
 
     p {
-      width: 90%;
       margin: 15px 0;
+      width: 90%;
     }
   }
 
   @include small {
     text-align: center;
   }
+
+  h1 {
+    color: $color-primary_02;
+    letter-spacing: 3px;
+    font-size: 6.4rem;
+    font-family: 'Love Ya Like A Sister';
+  }
+
+  span {
+    display: block;
+    color: $color-secondary_03;
+    font-size: 4rem;
+    font-family: 'Markazi Text';
+  }
+
+  p {
+    margin: 30px 0 50px 0;
+    width: 70%;
+    color: $color-secondary_03;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 21px;
+  }
 }
 
 .img_container {
   flex-basis: 40%;
   max-width: 350px;
-
-  img {
-    margin-bottom: -130px;
-  }
 
   @include table_port {
     & img {
@@ -88,5 +83,9 @@
 
   @include small {
     margin-right: 0;
+  }
+
+  img {
+    margin-bottom: -130px;
   }
 }

@@ -4,7 +4,6 @@ import Special from '../Special'
 import Reviews from '../Reviews'
 import About from '../About'
 
-
 const HomePage = () => {
   return (
     <>

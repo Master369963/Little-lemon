@@ -5,25 +5,25 @@
   top: 0;
   left: 0;
   z-index: 90;
+  @include flexCenter;
   width: 100%;
   height: 100%;
   background: rgba($color-primary_dark, 0.8);
-  @include flexCenter;
 }
 
 .content {
   position: relative;
+  padding: 30px;
   width: 60%;
   background: $color-secondary_03;
-  padding: 30px;
 
   @include phone {
     width: 80%;
   }
 
   @include small {
-    width: 100%;
     padding: 10px;
+    width: 100%;
   }
 }
 
@@ -36,8 +36,8 @@
 
   &:hover path,
   &:active path {
-    stroke: $color-secondary_01;
     transition: all .1s ease;
+    stroke: $color-secondary_01;
   }
 }
 
@@ -55,23 +55,23 @@
   }
 
   .input_item {
-    margin-bottom: 20px;
     position: relative;
+    margin-bottom: 20px;
   }
 
   .invalid_msg {
     position: absolute;
     top: calc(100% + 3px);
-    left: 0;
     right: 0;
-    font-size: 1.2rem;
+    left: 0;
     color: $color-warning;
+    font-size: 1.2rem;
   }
 
   input,
   textarea {
-    @include input_block;
     border: 1px solid rgb(204, 204, 204);
+    @include input_block;
 
     // form invalid
     &:hover {
@@ -89,14 +89,14 @@
   }
 
   .confirm_btn {
-    background: $color-primary_02;
     border-color: transparent;
+    background: $color-primary_02;
     transition: all .2s ease;
 
     &:hover {
+      border-color: transparent;
       background: $color-primary-01;
       color: $color-secondary_03;
-      border-color: transparent;
     }
 
     &:active {
@@ -113,28 +113,28 @@
     flex-basis: 50%;
 
     h3 {
-      font-size: 2rem;
       margin-bottom: 10px;
       text-align: left;
+      font-size: 2rem;
     }
 
     >div:not(:last-child) {
-      text-align: left;
       display: flex;
-      justify-content: flex-start;
       align-items: center;
-      gap: 10px;
+      justify-content: flex-start;
       margin-bottom: 10px;
+      text-align: left;
+      gap: 10px;
     }
 
     >div:last-child {
-      border-top: 1px solid $color-primary_dark;
       margin-top: 10px;
+      border-top: 1px solid $color-primary_dark;
     }
 
     span {
-      font-size: 1.6rem;
       font-weight: 600;
+      font-size: 1.6rem;
     }
 
     svg {
@@ -143,13 +143,13 @@
 
     .booking_notes {
       padding: 10px;
-      font-size: 1.2rem;
       text-align: left;
+      font-size: 1.2rem;
 
       li {
-        line-height: 15px;
         list-style: inside;
         list-style-type: disc;
+        line-height: 15px;
       }
     }
   }

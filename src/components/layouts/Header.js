@@ -3,7 +3,6 @@ import Logo from '../../images/Logo.png'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-// import { Link as LinkRoll } from 'react-scroll'
 import { HashLink } from 'react-router-hash-link'
 
 function Header() {

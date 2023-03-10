@@ -8,7 +8,6 @@ const reviews = [
   { id: 'aa07', name: 'Anon', comment: 'Yum Yum, love this place - You are all so lovely :) Thanks!' },
   { id: 'aa08', name: 'G Thabet', comment: 'Beautiful food, lovely service and surroundings' },
   { id: 'aa09', name: 'Linda Smith', comment: 'We will certainly be coming again and we will have no hesitation in recommending you to all our friends' },
-
 ]
 
 export default reviews
