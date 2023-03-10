@@ -14,10 +14,10 @@ There are mainly 2 pages: the homepage and a functional booking page with form v
 
 ### Home page
  
-you will be re-directed to the related section When you click menu items in the header.
+You will be re-directed to the related section when you click menu items in the header.
 
 
-![image](https://github.com/Master369963/Little-lemon/blob/main/ReadmeAssets/homepage_01.png?raw=true)
+![image](https://github.com/Master369963/Little-lemon/blob/main/ReadmeAssets/formValidation.png?raw=true)
 
 ***
 
