@@ -60,13 +60,14 @@
       line-height: 23px;
       position: relative;
       cursor: pointer;
+      padding: 10px;
 
-      &::before {
+      &:not(:last-child)::before {
         content: "";
         width: 100%;
         position: absolute;
         left: 0;
-        bottom: -5px;
+        bottom: 0;
         border-bottom: 2px solid transparent;
         transform: scale(0, 1);
         transition: transform .2s ease-out;
@@ -81,6 +82,15 @@
       @include table_port {
         color: $color-primary_dark;
         font-weight: 600;
+      }
+
+      &:last-child {
+        border: 1px solid;
+        transition: transform .2s ease-out;
+
+        &:hover {
+          border-color: $color-secondary_01;
+        }
       }
     }
   }
