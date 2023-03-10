@@ -17,7 +17,7 @@ There are mainly 2 pages: the homepage and a functional booking page with form v
 You will be re-directed to the related section when you click menu items in the header.
 
 
-![image](https://github.com/Master369963/Little-lemon/blob/main/ReadmeAssets/formValidation.png?raw=true)
+![image](https://github.com/Master369963/Little-lemon/blob/main/ReadmeAssets/homepage_01.png?raw=true)
 
 ***
 
@@ -28,10 +28,10 @@ Select date, time and guest's number to make a reservation.
 ![image](https://github.com/Master369963/Little-lemon/blob/main/ReadmeAssets/reservationPage.png?raw=true)
  
 
-Booking form with the validation.
+Booking form with the validation. 
 Confirm button is available only when the required areas are filled.
 
-![image](https://github.com/Master369963/Little-lemon/blob/main/ReadmeAssets/confirmPage.png?raw=true)
+![image](https://github.com/Master369963/Little-lemon/raw/main/ReadmeAssets/formValidation.png?raw=true)
 
 
 ## Technologies
