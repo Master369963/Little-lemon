@@ -21,6 +21,10 @@
   width: 200px;
 
   @include table_port {
+    // width: 150px;
+  }
+
+  @include phone {
     width: 150px;
   }
 }
@@ -31,7 +35,7 @@
     align-items: center;
     text-align: center;
     line-height: 100px;
-    gap: 30px;
+    gap: 5px;
 
     @include table_port {
       position: fixed;
