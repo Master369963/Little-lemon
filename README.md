@@ -1,6 +1,6 @@
 # Little Lemon Restaurant website
 
-In this project, I built the wireframe and prototype in Figma from the beginning and then created a responsive website with React. 
+In this project, I built the wireframe and prototype in Figma from the beginning and then created a responsive website with React.
 
 There are mainly 2 pages: the homepage and a functional booking page with form validation.
 
@@ -13,7 +13,7 @@ There are mainly 2 pages: the homepage and a functional booking page with form v
 ## Project Screen Shot(s)
 
 ### Home page
- 
+
 You will be re-directed to the related section when you click menu items in the header.
 
 
@@ -23,12 +23,12 @@ You will be re-directed to the related section when you click menu items in the 
 
 ### Reservation page
 
-Select date, time and guest's number to make a reservation. 
+Select date, time and guest's number to make a reservation.
 
 ![image](https://github.com/Master369963/Little-lemon/blob/main/ReadmeAssets/reservationPage.png?raw=true)
- 
 
-Booking form with the validation. 
+
+Booking form with the validation.
 Confirm button is available only when the required areas are filled.
 
 ![image](https://github.com/Master369963/Little-lemon/raw/main/ReadmeAssets/formValidation.png?raw=true)
