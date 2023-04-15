@@ -6,7 +6,7 @@
 
 .footer_content {
   display: flex;
-  align-items: center;
+  // align-items: center;
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 15px;
@@ -14,13 +14,14 @@
   gap: 40px;
 
   @include small {
-    gap: 20px;
+    gap: 1.5rem;
   }
 }
 
 .footer_logo {
   flex-basis: 20%;
   max-width: 100px;
+  min-width: 45px;
 }
 
 .footer_group {
