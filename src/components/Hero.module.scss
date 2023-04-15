@@ -87,5 +87,9 @@
 
   img {
     margin-bottom: -130px;
+
+    @include phone {
+      margin-bottom: unset;
+    }
   }
 }
