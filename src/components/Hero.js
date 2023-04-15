@@ -9,7 +9,8 @@ const Hero = () => {
         <h1>Little Lemon</h1>
         <span>Roma</span>
         <p>We are a family owned Italian restaurant, focused on traditional recipes served with a modern twist.</p>
-        <Link to="/reservation"><button className="primary-btn">Reserve a table</button></Link>
+        <Link to="/reservation" className="primary-btn">Reserve a table</Link>
+        {/* <button className="primary-btn">Reserve a table</button> */}
       </div>
       <div className={styles.img_container}>
         <img src={hero} alt="hero" />

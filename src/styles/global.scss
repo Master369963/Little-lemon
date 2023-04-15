@@ -54,8 +54,9 @@ img {
   border-radius: 5px;
   font-weight: 500;
   font-size: 1.8rem;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   border: none;
+  color: $color-primary_dark;
   cursor: pointer;
   transition: all .1s ease;
 
@@ -63,7 +64,6 @@ img {
     transform: translateY(-3px);
     // box-shadow: 0 5px 15px rgba($color: $color-primary_dark, $alpha: 0.2);
     box-shadow: 0px 1px 5px 0px rgba(87, 87, 87, 1);
-
   }
 
   &:active {
