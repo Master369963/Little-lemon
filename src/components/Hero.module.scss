@@ -1,14 +1,15 @@
 @import '../styles/Mixin.scss';
 
 .wrapper {
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
   max-height: 400px;
   background: $color-primary_01;
   @include flexSBcenter;
 
   @include phone {
     overflow: hidden;
+    padding-bottom: 3rem;
   }
 
   @include small {
