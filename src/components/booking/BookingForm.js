@@ -34,7 +34,7 @@ const BookingForm = (props) => {
   const matchData = props.timeSlot.find((item) => {
     return item.date.toLocaleDateString() === bookingInfo.res_date.toLocaleDateString()
   })
-
+ 
   return (
     <div className={styles.wrapper}>
       <div className={`container ${styles.content}`}>
