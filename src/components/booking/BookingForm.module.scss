@@ -44,7 +44,7 @@
 
   input,
   select,
-  button {
+  .bookingBtn {
     @include input_block;
   }
 
@@ -76,7 +76,7 @@
     }
   }
 
-  .btn {
+  .bookingBtn {
     position: relative;
     padding: 10px;
     color: $color-primary_dark;

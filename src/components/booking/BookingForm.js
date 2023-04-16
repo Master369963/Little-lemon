@@ -65,7 +65,7 @@ const BookingForm = (props) => {
             </select>
           </div>
           <div className={styles.input_group}>
-            <button  className={styles.btn} onClick={() => setBookingInfo({ ...bookingInfo, makeABooking: true })}>Make a Reservation</button>
+            <button className={styles.bookingBtn} onClick={() => setBookingInfo({ ...bookingInfo, makeABooking: true })}>Make a Reservation</button>
             {/* <input type="submit" onClick={() => setBookingInfo({ ...bookingInfo, makeABooking: true })} value="Make a Reservation" className={styles.btn} /> */}
           </div>
           <p>For groups larger than 8 people, as well as for Private Dining, please give us a call directly on <span>+44 123 1234 1234</span> or send us an email <span>info@littlelemon.com</span>.</p>
