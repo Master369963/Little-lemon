@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Little-lemon/static/css/main.3b5834aa.css",
-    "main.js": "/Little-lemon/static/js/main.79d84543.js",
+    "main.css": "/Little-lemon/static/css/main.4f7923df.css",
+    "main.js": "/Little-lemon/static/js/main.f7c075ff.js",
     "static/js/787.cea1da3f.chunk.js": "/Little-lemon/static/js/787.cea1da3f.chunk.js",
     "static/media/booking.jpg": "/Little-lemon/static/media/booking.afc196b9852b5513a10e.jpg",
     "static/media/about.jpg": "/Little-lemon/static/media/about.f23a9ab2aa4c7438cb17.jpg",
@@ -10,12 +10,12 @@
     "static/media/Logo.png": "/Little-lemon/static/media/Logo.ac7c17006ed69939b034.png",
     "static/media/pagination.less": "/Little-lemon/static/media/pagination.cf9d7af2fb0c274c4110.less",
     "index.html": "/Little-lemon/index.html",
-    "main.3b5834aa.css.map": "/Little-lemon/static/css/main.3b5834aa.css.map",
-    "main.79d84543.js.map": "/Little-lemon/static/js/main.79d84543.js.map",
+    "main.4f7923df.css.map": "/Little-lemon/static/css/main.4f7923df.css.map",
+    "main.f7c075ff.js.map": "/Little-lemon/static/js/main.f7c075ff.js.map",
     "787.cea1da3f.chunk.js.map": "/Little-lemon/static/js/787.cea1da3f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b5834aa.css",
-    "static/js/main.79d84543.js"
+    "static/css/main.4f7923df.css",
+    "static/js/main.f7c075ff.js"
   ]
 }
