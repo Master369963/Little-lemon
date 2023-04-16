@@ -10,7 +10,7 @@ import ConfirmBooking from './ConfirmBooking'
 const BookingForm = (props) => {
   const [bookingInfo, setBookingInfo] = useState({
     res_date: new Date(),
-    res_time: "",
+    res_time: props.timeSlot[0].time[0],
     guests: 2,
     makeABooking: false,
   })
@@ -35,6 +35,11 @@ const BookingForm = (props) => {
     return item.date.toLocaleDateString() === bookingInfo.res_date.toLocaleDateString()
   })
  
+  const handleBtnClick =() => {
+    console.log('click')
+    console.log(bookingInfo)
+    setBookingInfo({ ...bookingInfo, makeABooking: true })
+  }
   return (
     <div className={styles.wrapper}>
       <div className={`container ${styles.content}`}>
@@ -65,7 +70,7 @@ const BookingForm = (props) => {
             </select>
           </div>
           <div className={styles.input_group}>
-            <button className={styles.bookingBtn} onClick={() => setBookingInfo({ ...bookingInfo, makeABooking: true })}>Make a Reservation</button>
+            <button type="button" className={styles.bookingBtn} onClick={handleBtnClick}>Make a Reservation</button>
             {/* <input type="submit" onClick={() => setBookingInfo({ ...bookingInfo, makeABooking: true })} value="Make a Reservation" className={styles.btn} /> */}
           </div>
           <p>For groups larger than 8 people, as well as for Private Dining, please give us a call directly on <span>+44 123 1234 1234</span> or send us an email <span>info@littlelemon.com</span>.</p>
