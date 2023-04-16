@@ -10,7 +10,7 @@ import ConfirmBooking from './ConfirmBooking'
 const BookingForm = (props) => {
   const [bookingInfo, setBookingInfo] = useState({
     res_date: new Date(),
-    res_time: "17:00",
+    res_time: "",
     guests: 2,
     makeABooking: false,
   })
@@ -57,15 +57,21 @@ const BookingForm = (props) => {
           </div>
           <div className={styles.input_group}>
             <BsPerson />
-            <input type="number" name="guests" min={1} max={8} value={bookingInfo.guests} onChange={handleChange} />
+            {/* <input type="number" name="guests" min={1} max={8} required value={bookingInfo.guests} onChange={handleChange} /> */}
+            <select name="guests" value={bookingInfo.guests} onChange={handleChange}>
+              {Array.from(Array(8).keys()).map((n) => (
+                <option value={n + 1} key={n+1}>{n + 1}</option>
+              ))}
+            </select>
           </div>
           <div className={styles.input_group}>
-            <input type="button" onClick={() => setBookingInfo({ ...bookingInfo, makeABooking: true })} value="Make a Reservation" className={styles.btn} />
+            <button  className={styles.btn} onClick={() => setBookingInfo({ ...bookingInfo, makeABooking: true })}>Make a Reservation</button>
+            {/* <input type="submit" onClick={() => setBookingInfo({ ...bookingInfo, makeABooking: true })} value="Make a Reservation" className={styles.btn} /> */}
           </div>
           <p>For groups larger than 8 people, as well as for Private Dining, please give us a call directly on <span>+44 123 1234 1234</span> or send us an email <span>info@littlelemon.com</span>.</p>
           <p>Please kindly let us know if you can not make it to your booking, or if the number of guests changes.</p>
           {bookingInfo.makeABooking && <ConfirmBooking dispatch={props.dispatch} bookingInfo={bookingInfo} cancelHandler={cancelBooking} getSubmit={handleSubmit} />}
-        </ div>
+        </div>
       </div>
     </div>
   )

@@ -43,7 +43,8 @@
   }
 
   input,
-  select {
+  select,
+  button {
     @include input_block;
   }
 
@@ -79,6 +80,8 @@
     position: relative;
     padding: 10px;
     color: $color-primary_dark;
+    // background: transparent;
+    // border: none;
 
     &:hover {
       border-color: transparent;
