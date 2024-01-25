@@ -34,8 +34,8 @@ const BookingForm = (props) => {
   const matchData = props.timeSlot.find((item) => {
     return item.date.toLocaleDateString() === bookingInfo.res_date.toLocaleDateString()
   })
- 
-  const handleBtnClick =() => {
+
+  const handleBtnClick = () => {
     console.log('click')
     console.log(bookingInfo)
     setBookingInfo({ ...bookingInfo, makeABooking: true })
@@ -65,7 +65,7 @@ const BookingForm = (props) => {
             {/* <input type="number" name="guests" min={1} max={8} required value={bookingInfo.guests} onChange={handleChange} /> */}
             <select name="guests" value={bookingInfo.guests} onChange={handleChange}>
               {Array.from(Array(8).keys()).map((n) => (
-                <option value={n + 1} key={n+1}>{n + 1}</option>
+                <option value={n + 1} key={n + 1}>{n + 1}</option>
               ))}
             </select>
           </div>

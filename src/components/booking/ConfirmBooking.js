@@ -18,16 +18,16 @@ const ConfirmBooking = ({ bookingInfo, cancelHandler, getSubmit, dispatch }) => 
     validationSchema: Yup.object({
       firstName: Yup.string()
         .max(15, 'Must be 15 characters or less')
-        .required('This area is required'),
+        .required('This field is required'),
       surName: Yup.string()
         .max(15, 'Must be 20 characters or less')
-        .required('This area is required'),
+        .required('This field is required'),
       phone: Yup.string()
         .min(10, 'Invalid phone number')
         .max(13)
-        .required('This area is required'),
+        .required('This field is required'),
       email: Yup.string().email('Invalid email address')
-        .required('This area is required'),
+        .required('This field is required'),
       comment: Yup.string()
         .max(40)
     }),
@@ -89,7 +89,7 @@ const ConfirmBooking = ({ bookingInfo, cancelHandler, getSubmit, dispatch }) => 
               ) : null}
             </div>
             <div className={styles.input_item}>
-              <textarea cols="3" placeholder="Special request(Optional)"
+              <textarea cols="3" placeholder="Special request (Optional)"
                 name="comment"
                 className={formik.touched.comment && formik.errors.comment ? styles.invalid : null}
                 {...formik.getFieldProps('comment')}></textarea>

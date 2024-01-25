@@ -25,6 +25,14 @@ html {
   }
 }
 
+body {
+  padding-top: 100px;
+
+  @include phone {
+    padding-top: 75px;
+  }
+}
+
 a {
   color: $color-primary_dark;
   text-decoration: none;
@@ -101,3 +109,15 @@ div[class$=popper] {
   //   left: 80px;
   // }
 }
+
+// .swiper {
+//   overflow: visible;
+// }
+
+// .swiper-button-prev {
+//   margin-left: -60px;
+// }
+
+// .swiper-button-next {
+//   margin-right: -60px;
+// }

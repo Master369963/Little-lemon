@@ -46,6 +46,7 @@
   select,
   .bookingBtn {
     @include input_block;
+    padding: 10px 40px;
   }
 
   select {

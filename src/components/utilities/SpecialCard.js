@@ -4,7 +4,7 @@ const SpecialCard = ({ specialItem }) => {
   return (
     <div className={styles.card}>
       <div className={styles.card_photo}>
-        <img src={specialItem.photo} alt="" />
+        <img src={specialItem.photo} alt={specialItem.name} />
       </div>
       <div className={styles.card_content}>
         <div className={styles.card_title}>

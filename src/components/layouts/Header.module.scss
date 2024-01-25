@@ -1,7 +1,15 @@
 @import '../../styles/Mixin.scss';
 
-.wrapper {
+header {
+  position: fixed;
   z-index: 100;
+  width: 100%;
+  top: 0;
+  background: white;
+  box-shadow: 0 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+.wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -58,17 +66,11 @@
 
     li {
       position: relative;
-      padding: 10px;
       font-weight: 500;
       font-size: 2rem;
       font-family: 'Karla', sans-serif;
       line-height: 23px;
       cursor: pointer;
-
-      @include table_port {
-        color: $color-primary_dark;
-        font-weight: 600;
-      }
 
       &:not(:last-child)::before {
         position: absolute;
@@ -88,14 +90,30 @@
       }
 
       &:last-child {
+        margin-left: 10px;
         border: 1px solid;
-        transition: transform .2s ease-out;
+        transition: all .3s ease-out;
 
         &:hover {
-          border-color: $color-secondary_01;
+          border-color: $color-secondary_02;
+          background: $color-secondary_02 ;
+        }
+      }
+
+      @include table_port {
+        color: $color-primary_dark;
+        font-weight: 600;
+
+        &:last-child {
+          margin-left: 0px;
         }
       }
     }
+  }
+
+  a {
+    display: inline-block;
+    padding: 10px;
   }
 }
 

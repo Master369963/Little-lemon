@@ -14,31 +14,33 @@ function Header() {
   }
 
   return (
-    <header className={`container ${styles.wrapper}`}>
-      <div className={styles.logo_container}>
-        <Link to="/"><img src={Logo} alt="logo" /></Link>
-      </div>
-      <nav className={styles.nav_menu}>
-        <ul className={isNavOpened ? styles.active : null}>
-          <li>
-            <HashLink to="/" onClick={() => setIsNavOpened(false)}>Home</HashLink>
-          </li>
-          <li>
-            <HashLink to={"/#about"} onClick={handleClick('about')}>About</HashLink>
-          </li>
-          <li>
-            <HashLink to={"/#reviews"} onClick={handleClick('reviews')}>Reviews</HashLink>
-          </li>
-          <li>
-            <HashLink to={"/#special"} onClick={handleClick('special')}>Order Online</HashLink>
-          </li>
-          <li>
-            <Link to="/reservation" onClick={() => setIsNavOpened(false)}>Reservations</Link>
-          </li>
-        </ul>
-      </nav>
-      <div className={styles.hamburger} onClick={() => setIsNavOpened(!isNavOpened)}>
-        {isNavOpened ? <AiOutlineClose size={25} color={"gray"} /> : <AiOutlineMenu size={25} />}
+    <header>
+      <div className={`container ${styles.wrapper}`}>
+        <div className={styles.logo_container}>
+          <HashLink to="/#"><img src={Logo} alt="logo" /></HashLink>
+        </div>
+        <nav className={styles.nav_menu}>
+          <ul className={isNavOpened ? styles.active : null}>
+            <li onClick={() => setIsNavOpened(false)}>
+              <HashLink to="/#">Home</HashLink>
+            </li>
+            <li>
+              <HashLink to={"/#about"} onClick={handleClick('about')}>About</HashLink>
+            </li>
+            <li>
+              <HashLink to={"/#reviews"} onClick={handleClick('reviews')}>Reviews</HashLink>
+            </li>
+            <li>
+              <HashLink to={"/#special"} onClick={handleClick('special')}>Order Online</HashLink>
+            </li>
+            <li onClick={() => setIsNavOpened(false)}>
+              <Link to="/reservation">Reservations</Link>
+            </li>
+          </ul>
+        </nav>
+        <div className={styles.hamburger} onClick={() => setIsNavOpened(!isNavOpened)}>
+          {isNavOpened ? <AiOutlineClose size={25} color={"gray"} /> : <AiOutlineMenu size={25} />}
+        </div>
       </div>
     </header>
   )

@@ -7,7 +7,8 @@ const Special = () => {
     <section id="special" className={styles.wrapper}>
       <div className={`container`}>
         <div className={styles.title}>
-          <h2 className="sub_title">This week Special menu </h2>
+          <h2 className="sub_title">This week special menu </h2>
+          {/* <button className="primary-btn">Discover the menu</button> */}
         </div>
         <div className={styles.cards}>
           {specialMenu.map((specialItem) => (

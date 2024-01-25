@@ -6,10 +6,9 @@
 
 .footer_content {
   display: flex;
-  // align-items: center;
   justify-content: center;
-  padding-top: 40px;
-  padding-bottom: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-align: left;
   gap: 40px;
 
@@ -25,6 +24,9 @@
 }
 
 .footer_group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   li {
     margin-bottom: 10px;
