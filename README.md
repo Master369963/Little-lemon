@@ -24,7 +24,7 @@ You will be re-directed to the related section when you click menu items in the 
 
 Select date, time and guest's number to make a reservation.
 
-![image](https://github.com/Master369963/Little-lemon/blob/main/ReadmeAssets/reservation -page.jpg)
+![image](https://github.com/Master369963/Little-lemon/blob/main/ReadmeAssets/reservation-page.jpg)
 
 Booking form with the validation.
 Confirm button is available only when the required areas are filled.
